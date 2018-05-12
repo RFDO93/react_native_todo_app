@@ -5,7 +5,6 @@ class Head extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.titulo} >Header</Text>
         <TextInput
           style={styles.texto}
           onChangeText= {this.props.cambiarTexto}

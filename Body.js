@@ -5,15 +5,15 @@ import {
   StyleSheet,
   FlatList,
 } from 'react-native';
+import Tarea from './Tarea';
 
 export default class Body extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Body</Text>
         <FlatList
           data={this.props.tareas}
-          renderItem={ ({item}) => <Text>{item.texto}</Text> }
+          renderItem={({ item }) => <Tarea item={item} eliminar={this.props.eliminar} />}
          />
       </View>
     );
